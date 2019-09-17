@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이디야(Ediya)</title>
+  <style>
+    .a11y-hidden{
+      background-color: red;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      clip-path: polygon(0 0,0 0,0 0);
+      white-space: nowrap;
+
+
+    }
+  </style>
+</head>
+<body>
+  <!-- <header>헤더</header>
+  <main>메인 콘텐츠</main>
+  <footer class="a11y-hidden">풋터</footer> -->
+<h1 class="brand a11y-hidden">WTC...</h1>
+
+  <div role="banner">
+
+    <h1 class="brand"><a href="#">EDIYA COFFEE</a></h1>
+
+    <button title="메뉴 열기" aria-label="메뉴 열기"><span class="ir"></span></button>
+
+    <div role="navigation">
+      
+      <h2 class="a11y-hidden">메인 메뉴</h2>
+
+      <button title="메뉴 닫기" aria-label="메뉴 닫기" ><span class="close" aria-hidden="true">X</span></button>
+    </div>
+
+  </div>
+
+  <div role="main">
+
+    <h2 class="a11y-hidden">음료 정보</h2>
+
+    <ul>
+      <li>
+        <a href="#" role="button" aria-haspopup="dialog" aria-pressed="false">
+          <figure>
+            <img src="./images/hot-cherry-blossoms-latte.png" alt="">
+            <figcaption>HOT 벚꽃라떼</figcaption>
+          </figure>
+        </a>
+        <div role="dialog" aria-modal="true" aria-labelledby="menu1">
+
+          <h3 id="menu1">HOT 벚꽃라떼
+            <span lang="en">Cherry Blossom Latte</span>
+          </h3>
+
+          <button aria-label="음료 상세 정보 닫기"><span aria-hidden="true">X</span></button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div role="footer" class="a11y-hidden">푸터</div>
+
+  
+</body>
+</html>
